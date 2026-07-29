@@ -1,61 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="sky" id="sky">
-    <div class="container">
-
-      <form class="search-box" id="searchForm">
-        <input
-          type="text"
-          id="cityInput"
-          placeholder="Search for a city"
-          autocomplete="off"
-        >
-        <button class="search-btn" type="submit" aria-label="Search">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="7"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-      </form>
-
-      <p class="status" id="status"></p>
-
-      <div class="weather-container" id="weatherContainer" hidden>
-        <div class="weather-icon" id="weatherIcon" aria-hidden="true"></div>
-        <h1 class="temp" id="temp">--°</h1>
-        <p class="condition" id="condition">--</p>
-        <h2 class="city" id="cityName">--</h2>
-        <p class="updated" id="updated"></p>
-
-        <div class="other-details">
-          <div class="detail-card">
-            <span class="detail-label">Humidity</span>
-            <span class="detail-value" id="humidity">--%</span>
-          </div>
-          <div class="detail-card">
-            <span class="detail-label">Wind speed</span>
-            <span class="detail-value" id="windSpeed">-- km/h</span>
-          </div>
-          <div class="detail-card">
-            <span class="detail-label">Feels like</span>
-            <span class="detail-value" id="feelsLike">--°</span>
-          </div>
-        </div>
-      </div>
-
+    <div class="todoContainer">
+    <h1>TODO APP</h1>
+    <input id="todoInput" type="text" placeholder="Enter any Item">
+    <button  id="todoBtn">Add+</button>
+    <ul id="todoList" style="text-align:left"> 
+    </ul>
+    
     </div>
-  </div>
+    <script src="./app.js"></script>
 
-  <script src="./app.js"></script>
+
+
 </body>
 </html>
